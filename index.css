@@ -9,6 +9,10 @@
   button, input[type="text"] {
     padding: 5px;
   }
+
+  input {
+      display: block;
+  }
   
   button:hover {
     cursor: pointer;
