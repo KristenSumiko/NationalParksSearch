@@ -14,8 +14,9 @@
             $('#results-list').append(
             `<li><h3>${responseJson.data[i].fullName}</h3>
             <p>${responseJson.data[i].description}</p>
-            <a href='${responseJson.data[i].url}'>Website</a>
+            <a href='${responseJson.data[i].url}'>${responseJson.data[i].url}</a>
             </li>`
+            //make sep funct to format address and return sensible address html?
             )};
         $('#results').removeClass('hidden');
     };
@@ -26,6 +27,7 @@
         const params = {
             api_key: apiKey,
             stateCode: $("#js-searchState").val(),
+            //how to use .split() to ensure input seperates multiple states w "," and removes extra spaces?
             maxResults,
     };
     const queryString = formatQueryParams(params)
