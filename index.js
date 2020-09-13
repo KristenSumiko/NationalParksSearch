@@ -20,7 +20,7 @@
         $('#results-list').append(
         `<li><h3>${responseJson.data[i].fullName}</h3>
         <p>${responseJson.data[i].description}</p>
-        <a href='${responseJson.items[i].url}'>Website</a>
+        <a href='${responseJson.data[i].url}'>Website</a>
         </li>`
         )};
     //display the results section  
